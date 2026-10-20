@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>情绪鸡尾酒 · 要点精华</title>
+<meta name="theme-color" content="#FBF7EE">
+<meta name="description" content="《情绪鸡尾酒：从多巴胺到内啡肽，调配幸福秘方》六瓶基酒与调配心法，一页讲完">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon-180.png">
+<link rel="manifest" href="manifest.json">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  background:#FBF7EE;color:#232019;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif;
+  min-height:100vh;overflow-x:hidden;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 22px 76px}
+.fadein{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.fadein.in{opacity:1;transform:none}
+/* ---- hero ---- */
+.hero{position:relative;text-align:center;padding:clamp(40px,9vw,72px) 0 8px}
+.blob{position:absolute;border-radius:46% 54% 52% 48%/55% 45% 55% 45%;opacity:.9;pointer-events:none}
+.b1{width:74px;height:64px;background:#F2C230;top:16px;left:4%;animation:fl 7s ease-in-out infinite}
+.b2{width:52px;height:58px;background:#7FC5DC;top:74px;left:13%;animation:fl 8.5s .6s ease-in-out infinite}
+.b3{width:88px;height:78px;background:#9CBF3B;top:8px;right:10%;animation:fl 9s .3s ease-in-out infinite}
+.b4{width:44px;height:40px;background:#E75B8D;top:120px;right:18%;animation:fl 7.5s 1s ease-in-out infinite}
+.b5{width:60px;height:52px;background:#B9A3D0;top:30px;right:38%;animation:fl 8s .9s ease-in-out infinite}
+.b6{width:30px;height:27px;background:#E8582A;top:158px;left:22%;animation:fl 6.8s 1.4s ease-in-out infinite}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-9px) rotate(4deg)}}
+.en{font-size:clamp(24px,6vw,34px);font-weight:900;letter-spacing:.28em;margin:14px 0 6px;white-space:nowrap}
+.en b{background:linear-gradient(90deg,#E8582A,#E75B8D,#9CBF3B,#7FC5DC,#B9A3D0,#F2C230);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1{font-size:clamp(44px,12.5vw,74px);font-weight:900;letter-spacing:.06em;line-height:1.12}
+h1 .mint{color:#4A4436}
+.sub{font-size:clamp(17px,4.6vw,22px);font-weight:800;margin-top:14px;line-height:1.7}
+.sub span{border-bottom:3px solid #F2C230}
+.glass{margin:26px auto 4px;display:block;width:min(230px,58%)}
+.hbadge{display:inline-block;margin-top:6px;background:#232019;color:#FBF7EE;font-size:12.5px;font-weight:700;letter-spacing:.14em;padding:9px 18px;border-radius:999px}
+.authors{margin-top:20px;font-size:12.5px;color:#8A8272;line-height:2}
+/* ---- 一句话 ---- */
+.onesen{margin-top:34px;text-align:center}
+.onesen .l{display:inline-block;font-size:12px;letter-spacing:.3em;color:#8A8272;border-top:1px solid #D8CFBB;border-bottom:1px solid #D8CFBB;padding:8px 4px;margin-bottom:14px}
+.onesen .s{font-size:clamp(19px,5.2vw,24px);font-weight:800;line-height:1.85}
+.onesen .s b{color:#E8582A}
+/* ---- 六瓶 ---- */
+.sec-h{text-align:center;margin:64px 0 8px}
+.sec-h .t{font-size:clamp(26px,7vw,34px);font-weight:900}
+.sec-h .e{font-size:12px;letter-spacing:.28em;color:#8A8272;margin-top:6px}
+.sec-h .n{font-size:13px;color:#6E6757;margin-top:10px;line-height:1.8}
+.bottles{margin-top:26px;display:grid;gap:20px}
+.bottle{background:#fff;border:2px solid #232019;border-radius:22px;padding:26px 24px 22px;position:relative;box-shadow:5px 6px 0 rgba(35,32,25,.12)}
+.bottle .b-blob{position:absolute;top:-24px;left:20px;width:52px;height:46px;border-radius:46% 54% 52% 48%/55% 45% 55% 45%;background:var(--c)}
+.bottle .b-no{position:absolute;top:16px;right:20px;font-size:13px;font-weight:900;color:var(--c);letter-spacing:.1em}
+.bottle h2{font-size:24px;font-weight:900;margin:6px 0 2px}
+.bottle .en2{font-size:12px;letter-spacing:.2em;color:#9A937F;font-weight:700}
+.bottle .role{font-size:14.5px;font-weight:700;margin-top:12px;color:var(--c)}
+.bottle .blk{margin-top:13px}
+.bottle .blk .k{font-size:12px;font-weight:900;letter-spacing:.16em;color:#8A8272;margin-bottom:5px}
+.bottle .blk .v{font-size:14.5px;line-height:1.85}
+.bottle .blk .v em{font-style:normal;background:linear-gradient(transparent 62%,var(--cb) 62%);font-weight:700}
+.recipes{margin-top:26px;display:grid;gap:16px}
+.recipe{background:#232019;color:#FBF7EE;border-radius:20px;padding:22px 22px 18px}
+.recipe .r-t{font-size:16.5px;font-weight:900}
+.recipe .r-b{font-size:13.5px;line-height:2;margin-top:8px;color:#E4DDCB}
+.recipe .r-b b{color:#F2C230;font-weight:800}
+.recipe .r-x{font-size:12px;margin-top:10px;color:#B9B29C;letter-spacing:.05em}
+.how{margin-top:26px;display:grid;gap:14px}
+.how .h{background:#fff;border:2px solid #232019;border-radius:18px;padding:18px 20px;box-shadow:4px 5px 0 rgba(35,32,25,.1)}
+.how .h b{font-size:15.5px;font-weight:900}
+.how .h b i{font-style:normal;color:#E8582A;margin-right:8px}
+.how .h p{font-size:13.5px;line-height:1.9;margin-top:6px;color:#4A4436}
+.author-sec{margin-top:56px;background:#fff;border-radius:22px;border:2px solid #232019;padding:26px 24px;box-shadow:5px 6px 0 rgba(35,32,25,.12)}
+.author-sec .t{font-size:13px;font-weight:900;letter-spacing:.2em;color:#8A8272}
+.author-sec .q{font-size:clamp(18px,4.8vw,21px);font-weight:800;line-height:1.9;margin-top:12px}
+.author-sec .q b{color:#E75B8D}
+.author-sec .s{font-size:13px;line-height:2;margin-top:12px;color:#4A4436}
+.link-egg{margin-top:22px;text-align:center}
+.link-egg a{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:800;color:#232019;text-decoration:none;background:#F2C230;border:2px solid #232019;padding:11px 20px;border-radius:999px;box-shadow:3px 4px 0 rgba(35,32,25,.2)}
+.pub{margin-top:44px;text-align:center;font-size:12.5px;color:#8A8272;line-height:2.1}
+.foot{margin-top:34px;text-align:center;font-size:12px;letter-spacing:.24em;color:#B3AB96}
+#toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);background:#232019;color:#FBF7EE;font-size:13px;font-weight:700;padding:11px 20px;border-radius:999px;opacity:0;transition:.3s;z-index:99;pointer-events:none}
+#toast.show{opacity:1;transform:translateX(-50%)}
+@media (max-width:480px){.en{letter-spacing:.16em}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero fadein in">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <span class="blob b4"></span><span class="blob b5"></span><span class="blob b6"></span>
+    <div class="en"><b>HIGH</b> ON <b>LIFE</b></div>
+    <h1>情绪鸡尾酒</h1>
+    <div class="sub">从<span>多巴胺</span>到<span>内啡肽</span>，<br>调配幸福秘方</div>
+    <svg class="glass" viewBox="0 0 200 210" aria-hidden="true">
+      <defs>
+        <linearGradient id="liq" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#7FC5DC"/><stop offset=".35" stop-color="#E75B8D"/>
+          <stop offset=".65" stop-color="#F2C230"/><stop offset="1" stop-color="#9CBF3B"/>
+        </linearGradient>
+      </defs>
+      <path d="M28 14 L172 14 L104 96 L104 178" fill="none" stroke="#232019" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M96 178 L60 196 L148 196" fill="none" stroke="#232019" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M46 30 L154 30 L100 92 Z" fill="url(#liq)"/>
+      <circle cx="70" cy="42" r="5" fill="#FBF7EE" opacity=".85"/>
+      <circle cx="120" cy="52" r="4" fill="#fff" opacity=".7"/>
+      <circle cx="96" cy="8" r="4" fill="#E75B8D"/><circle cx="84" cy="20" r="3.4" fill="#9CBF3B"/>
+      <circle cx="112" cy="16" r="3" fill="#7FC5DC"/><circle cx="130" cy="6" r="3.6" fill="#F2C230"/>
+      <circle cx="60" cy="6" r="3" fill="#B9A3D0"/>
+    </svg>
+    <div class="hbadge">六瓶基酒 · 一页调完</div>
+    <div class="authors">【瑞典】戴维·J.P. 菲利普斯（David JP Phillips） 著<br>汤玉吉 译 · 中信出版集团</div>
+  </header>
+
+  <section class="onesen fadein">
+    <div class="l">一句话讲完</div>
+    <div class="s">情绪不是天气，是一杯酒——<br>它由六瓶基酒调出来，<br>而<b>调酒的手，可以是你自己的</b>。</div>
+  </section>
+
+  <div class="sec-h fadein">
+    <div class="t">六瓶基酒</div>
+    <div class="e">SIX ESSENTIAL HORMONES</div>
+    <div class="n">每瓶都一样：它管什么 · 缺了会怎样 · 怎么自己加料</div>
+  </div>
+  <div class="bottles" id="bottles"></div>
+
+  <div class="sec-h fadein">
+    <div class="t">调配心法</div>
+    <div class="e">THE MIXING RULES</div>
+  </div>
+  <div class="how">
+    <div class="h fadein"><b><i>01</i>先灭火，再点火</b><p>皮质醇超标时，快乐酒根本倒不进去。压力大先降压力（呼吸、散步、睡够），再去追快乐。</p></div>
+    <div class="h fadein"><b><i>02</i>觉察 → 命名 → 加料</b><p>问自己「我现在这杯里是什么」，说出激素的名字，然后选一个动作加进去。命名本身就是第一口解药。</p></div>
+    <div class="h fadein"><b><i>03</i>快乐是配方，不是运气</b><p>把动作叠起来：运动＋大笑＋晒太阳＝三连杯。幸福不靠等，靠配方。</p></div>
+    <div class="h fadein"><b><i>04</i>小口常饮 ＞ 偶尔豪饮</b><p>每天 5 分钟的小动作，胜过周末突击两小时。神经化学认的是频率，不是排场。</p></div>
+  </div>
+
+  <div class="sec-h fadein">
+    <div class="t">今日特调</div>
+    <div class="e">READY-MADE RECIPES</div>
+    <div class="n">照着调就行</div>
+  </div>
+  <div class="recipes">
+    <div class="recipe fadein"><div class="r-t">🌅 早起动力杯</div><div class="r-b">晒太阳 5 分钟 ＋ 10 个深蹲 ＋ 写下今天 1 个小目标</div><div class="r-x">＝ 血清素 ＋ 睾酮 ＋ 多巴胺</div></div>
+    <div class="recipe fadein"><div class="r-t">🫂 被治愈特调</div><div class="r-b">拥抱 20 秒 ＋ 帮一个小忙 ＋ 复盘一件今天做对的事</div><div class="r-x">＝ 催产素 ＋ 血清素</div></div>
+    <div class="recipe fadein"><div class="r-t">🧯 压力急救杯</div><div class="r-b">4-7-8 呼吸 ×3 ＋ 出门走 10 分钟 ＋ 看一段大笑视频</div><div class="r-x">＝ 降皮质醇 ＋ 内啡肽</div></div>
+  </div>
+
+  <section class="author-sec fadein">
+    <div class="t">为什么信这本书</div>
+    <div class="q">菲利普斯从<b>抑郁</b>里一步步爬了出来——然后发现：情绪不需要等，它<b>可以被自己调配</b>。</div>
+    <div class="s">他是瑞典沟通专家、全球百万人听过的 TEDx 讲者。这本书是那次爬出来的路线图：不是鸡汤，是六瓶酒的使用说明书。</div>
+  </section>
+
+  <div class="link-egg fadein"><a href="https://emotioncocktail.netlify.app/" target="_blank" rel="noopener">🍸 已有同名调酒台 · 去投币调一杯</a></div>
+
+  <div class="pub fadein">
+    《情绪鸡尾酒：从多巴胺到内啡肽，调配幸福秘方》<br>
+    【瑞典】戴维·J.P. 菲利普斯 著 · 汤玉吉 译 · 中信出版集团
+  </div>
+  <footer class="foot fadein">情绪是配方 · 不是运气</footer>
+
+</div>
+<div id="toast"></div>
+<script>
+const HORMONES = [
+{c:'#E8582A', cb:'rgba(232,88,42,.22)', no:'BASE 01', n:'多巴胺', en:'DOPAMINE', role:'动力之酒——「贪婪的」',
+ tube:'动力 · 专注 · 奖励回路 · 上头',
+ low:'拖延、提不起劲、什么都索然无味',
+ acts:['达成小目标（哪怕很小）','把大任务拆成小任务','为胜利庆祝一下','建立新记忆（新歌、新路、新馆子）']},
+{c:'#E75B8D', cb:'rgba(231,91,141,.2)', no:'BASE 02', n:'催产素', en:'OXYTOCIN', role:'连接之酒——「爱的」',
+ tube:'爱 · 信任 · 亲密 · 归属感',
+ low:'孤独、疏离、对人竖起刺',
+ acts:['拥抱 20 秒（要够久）','帮别人一个小忙','一次不碰手机的真诚对话','摸摸猫狗、牵牵手']},
+{c:'#8CBF3F', cb:'rgba(140,191,63,.2)', no:'BASE 03', n:'血清素', en:'SEROTONIN', role:'稳定之酒——「自豪的」',
+ tube:'情绪稳定 · 自豪 · 被尊重 · 心情底色',
+ low:'低落、易怒、不停自我怀疑',
+ acts:['晒太阳（早上最好）','动起来，任何都行','睡前想 3 件今天做对的事','把完成的事打勾，郑重地']},
+{c:'#D6336C', cb:'rgba(214,51,108,.18)', no:'BASE 04', n:'内啡肽', en:'ENDORPHIN', role:'欣快之酒——「越痛越爽的」',
+ tube:'天然止痛 · 欣快 · 笑到肚子疼',
+ low:'怕痛、丧、笑不出来',
+ acts:['大笑（真的笑出声）','运动到临界点再坚持一下','冷水洗脸洗澡','吃点黑巧、来点辣']},
+{c:'#7C6FD0', cb:'rgba(124,111,208,.18)', no:'BASE 05', n:'皮质醇', en:'CORTISOL', role:'烟雾之酒——「救命的坏蛋」',
+ tube:'压力 · 战或逃 · 救命用它，慢性超标它毒你',
+ low:'不是缺它，是怕它多：焦虑、失眠、免疫下降、脑子发雾',
+ acts:['深呼吸（呼气比吸气长）','走进自然，哪怕楼下','睡够，咖啡因过午不碰','对压力源说一句「这不属于我」']},
+{c:'#F2C230', cb:'rgba(242,194,48,.25)', no:'BASE 06', n:'睾酮', en:'TESTOSTERONE', role:'能量之酒——「斗志的」',
+ tube:'能量 · 自信 · 斗志 · 竞争力',
+ low:'怂、疲、缩在原地不敢开始',
+ acts:['力量训练（举点铁）','赢一场，哪怕小游戏','挺胸站两分钟（Power Pose）','晨间冷水，一秒清醒']}
+];
+
+
+// ---------- render ----------
+const $ = s => document.querySelector(s);
+document.getElementById('bottles').innerHTML = HORMONES.map((x,i) => `
+  <article class="bottle fadein" style="--c:${x.c};--cb:${x.cb}">
+    <span class="b-blob"></span><span class="b-no">${x.no}</span>
+    <h2>${x.n}</h2><div class="en2">${x.en} · ${x.role}</div>
+    <div class="blk"><div class="k">它管</div><div class="v">${x.tube}</div></div>
+    <div class="blk"><div class="k">缺了它</div><div class="v"><em>${x.low}</em></div></div>
+    <div class="blk"><div class="k">加料动作</div><div class="v">${x.acts.map(a=>'· '+a).join('<br>')}</div></div>
+  </article>`).join('');
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+}), {threshold:.07});
+document.querySelectorAll('.fadein').forEach(el => io.observe(el));
+
+</script>
+</body>
+</html>
